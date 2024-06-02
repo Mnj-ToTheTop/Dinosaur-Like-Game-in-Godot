@@ -1,0 +1,91 @@
+[gd_scene load_steps=11 format=3 uid="uid://ba65uolvx8sgk"]
+
+[ext_resource type="Script" path="res://Foreground/grass1.gd" id="1_w1m5e"]
+[ext_resource type="Texture2D" uid="uid://g18chnxel3ow" path="res://Other/details/grass1.png" id="1_w3bj5"]
+[ext_resource type="Texture2D" uid="uid://c4gysily3unmy" path="res://Other/details/grass2.png" id="2_8qqcx"]
+[ext_resource type="Texture2D" uid="uid://dr5prn883biyv" path="res://Other/details/leaf1.png" id="3_n07or"]
+[ext_resource type="Texture2D" uid="uid://bkhwq8t7e5vqm" path="res://Other/details/leaf2.png" id="4_mhjn8"]
+[ext_resource type="Texture2D" uid="uid://3ovhbfk6nq26" path="res://Other/details/leaf3.png" id="5_1vi0r"]
+[ext_resource type="Texture2D" uid="uid://bj1fc2vj6rwey" path="res://Other/details/leaf4.png" id="6_jalb4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kvvkn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_w3bj5")
+}],
+"loop": true,
+"name": &"Grass1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8qqcx")
+}],
+"loop": true,
+"name": &"Grass2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_n07or")
+}],
+"loop": true,
+"name": &"Leaf1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_mhjn8")
+}],
+"loop": true,
+"name": &"Leaf2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_1vi0r")
+}],
+"loop": true,
+"name": &"Leaf3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_jalb4")
+}],
+"loop": true,
+"name": &"leaf4",
+"speed": 5.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_v0cf5"]
+script/source = "extends VisibleOnScreenNotifier2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8fc3x"]
+
+[node name="Grass" type="Area2D"]
+position = Vector2(1312, 674)
+script = ExtResource("1_w1m5e")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kvvkn")
+animation = &"Grass1"
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+script = SubResource("GDScript_v0cf5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8fc3x")

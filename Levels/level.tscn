@@ -1,0 +1,89 @@
+[gd_scene load_steps=5 format=3 uid="uid://gvgwskgfftov"]
+
+[ext_resource type="Script" path="res://Levels/Level.gd" id="1_rep7n"]
+[ext_resource type="PackedScene" uid="uid://5uw3c8jctdke" path="res://Player/Player.tscn" id="1_w7d30"]
+[ext_resource type="FontFile" uid="uid://cd16usmcol680" path="res://Other/Big_Bottom_Typeface_Normal.ttf" id="3_rnfk2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fe7hg"]
+size = Vector2(201, 70)
+
+[node name="Level" type="Node"]
+script = ExtResource("1_rep7n")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.976471, 0.941176, 0.882353, 1)
+
+[node name="HorizontalLine" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 439.0
+offset_bottom = -277.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.329412, 0.207843, 0.113725, 1)
+
+[node name="Player" parent="." instance=ExtResource("1_w7d30")]
+position = Vector2(210, 436)
+collision_mask = 6
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(210, 557)
+collision_layer = 2
+collision_mask = 0
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(2, -1)
+shape = SubResource("RectangleShape2D_fe7hg")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -38.5
+offset_top = 100.0
+offset_right = 38.5
+offset_bottom = 173.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.329412, 0.207843, 0.113725, 1)
+theme_override_fonts/font = ExtResource("3_rnfk2")
+theme_override_font_sizes/font_size = 20
+text = "Score"
+horizontal_alignment = 1
+metadata/_edit_group_ = true
+
+[node name="ScoreTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="BgTimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="Grass1Timer" type="Timer" parent="."]
+wait_time = 7.0
+autostart = true
+
+[node name="Grass2Timer" type="Timer" parent="."]
+wait_time = 13.0
+autostart = true
+
+[node name="Grass3Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
+[connection signal="timeout" from="BgTimer" to="." method="_on_bg_timer_timeout"]
+[connection signal="timeout" from="Grass1Timer" to="." method="_on_grass_1_timer_timeout"]
+[connection signal="timeout" from="Grass2Timer" to="." method="_on_grass_2_timer_timeout"]
+[connection signal="timeout" from="Grass3Timer" to="." method="_on_grass_3_timer_timeout"]
