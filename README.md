@@ -14,3 +14,5 @@ https://github.com/Mnj-ToTheTop/Dinosaur-Like-Game-in-Godot/assets/153396359/910
 
 
 The game is no way perfect, but it was a great learning experience.
+
+Tutorial I used: https://www.youtube.com/playlist?list=PL8ui5HK3oSiHwwXQ7xMj4MokBXhGt7NBq
