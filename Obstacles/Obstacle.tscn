@@ -1,0 +1,181 @@
+[gd_scene load_steps=32 format=3 uid="uid://cnwxfj1h73y2p"]
+
+[ext_resource type="Script" path="res://Obstacles/Obstacle.gd" id="1_1ltaf"]
+[ext_resource type="Texture2D" uid="uid://cfmn0imk1huy8" path="res://Graphics/Obstacles/couch/c1.png" id="3_4ewte"]
+[ext_resource type="Texture2D" uid="uid://dao6oeco0e3sp" path="res://Graphics/Obstacles/couch/c2.png" id="4_suy7f"]
+[ext_resource type="Texture2D" uid="uid://dku4vancvd8iy" path="res://Graphics/Obstacles/couch/c3.png" id="5_5586k"]
+[ext_resource type="Texture2D" uid="uid://qppmde2euj0v" path="res://Graphics/Obstacles/couch/c4.png" id="6_v47dw"]
+[ext_resource type="Texture2D" uid="uid://dxuag6ebwe7n6" path="res://Graphics/Obstacles/family1/1.png" id="7_nk1by"]
+[ext_resource type="Texture2D" uid="uid://ddsjgakpvb1e1" path="res://Graphics/Obstacles/family1/2.png" id="8_uwx8v"]
+[ext_resource type="Texture2D" uid="uid://ubmws67t7u4x" path="res://Graphics/Obstacles/family1/3.png" id="9_tarwq"]
+[ext_resource type="Texture2D" uid="uid://ctuy37nyhmvyv" path="res://Graphics/Obstacles/family1/4.png" id="10_n25m6"]
+[ext_resource type="Texture2D" uid="uid://bayxi26rod4i5" path="res://Graphics/Obstacles/kittens/k1.png" id="11_fv4oh"]
+[ext_resource type="Texture2D" uid="uid://dffqdpkh4n3gr" path="res://Graphics/Obstacles/kittens/k2.png" id="12_hrsko"]
+[ext_resource type="Texture2D" uid="uid://coev4o1i72p25" path="res://Graphics/Obstacles/kittens/k3.png" id="13_rh08p"]
+[ext_resource type="Texture2D" uid="uid://coiwhq4d3mpmh" path="res://Graphics/Obstacles/kittens/k4.png" id="14_gn3kt"]
+[ext_resource type="Texture2D" uid="uid://bgl5t5xuanoxp" path="res://Graphics/Obstacles/maru/m1.png" id="15_7vxeu"]
+[ext_resource type="Texture2D" uid="uid://b6j8w2ehg0ty8" path="res://Graphics/Obstacles/maru/m2.png" id="16_26et7"]
+[ext_resource type="Texture2D" uid="uid://d2nqb36ss7mud" path="res://Graphics/Obstacles/maru/m3.png" id="17_3ffk1"]
+[ext_resource type="Texture2D" uid="uid://d3p4xn4etf3qm" path="res://Graphics/Obstacles/maru/m4.png" id="18_yeqwi"]
+[ext_resource type="Texture2D" uid="uid://dror7d5blhwxy" path="res://Graphics/Obstacles/pile/p1.png" id="19_trott"]
+[ext_resource type="Texture2D" uid="uid://stgby0ksrpsv" path="res://Graphics/Obstacles/pile/p2.png" id="20_gvvpq"]
+[ext_resource type="Texture2D" uid="uid://b5ikrirh5rpbi" path="res://Graphics/Obstacles/pile/p3.png" id="21_7o4mn"]
+[ext_resource type="Texture2D" uid="uid://dn5obgdxrehjq" path="res://Graphics/Obstacles/pile/p4.png" id="22_uslfq"]
+[ext_resource type="Texture2D" uid="uid://1agsm0tbobyn" path="res://Graphics/Obstacles/pizza/p1.png" id="23_4xhw1"]
+[ext_resource type="Texture2D" uid="uid://c0knnrscb5f0x" path="res://Graphics/Obstacles/pizza/p2.png" id="24_v0n4k"]
+[ext_resource type="Texture2D" uid="uid://cri4q4oouhba0" path="res://Graphics/Obstacles/pizza/p4.png" id="25_e5uns"]
+[ext_resource type="Texture2D" uid="uid://dl0kp3tbovsfq" path="res://Graphics/Obstacles/pizza/p3.png" id="26_lb772"]
+[ext_resource type="Texture2D" uid="uid://cn4tox5backs6" path="res://Graphics/Obstacles/Sloth/s1.png" id="27_1jjrr"]
+[ext_resource type="Texture2D" uid="uid://bbj64o6ljjsvl" path="res://Graphics/Obstacles/Sloth/s2.png" id="28_tcu7b"]
+[ext_resource type="Texture2D" uid="uid://c14iji36vh5td" path="res://Graphics/Obstacles/Sloth/s3.png" id="29_xgqoi"]
+[ext_resource type="Texture2D" uid="uid://tj03twt7ffcx" path="res://Graphics/Obstacles/Sloth/s4.png" id="30_87kx8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gbhvd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_4ewte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_suy7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5586k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_v47dw")
+}],
+"loop": true,
+"name": &"Couch",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_nk1by")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uwx8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tarwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_n25m6")
+}],
+"loop": true,
+"name": &"Family",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_fv4oh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_hrsko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rh08p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gn3kt")
+}],
+"loop": true,
+"name": &"Kitten",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_7vxeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_26et7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3ffk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_yeqwi")
+}],
+"loop": true,
+"name": &"Maru",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_trott")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_gvvpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_7o4mn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_uslfq")
+}],
+"loop": true,
+"name": &"Pile",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_4xhw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_v0n4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_e5uns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_lb772")
+}],
+"loop": true,
+"name": &"Pizza",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_1jjrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_tcu7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xgqoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_87kx8")
+}],
+"loop": true,
+"name": &"Sloth",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aqumf"]
+radius = 66.0
+height = 178.0
+
+[node name="Obstacle" type="Area2D"]
+position = Vector2(1415, 480)
+collision_layer = 4
+script = ExtResource("1_1ltaf")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_gbhvd")
+animation = &"Couch"
+autoplay = "Sloth"
+speed_scale = 1.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 3)
+rotation = 4.71239
+shape = SubResource("CapsuleShape2D_aqumf")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0.500044, -1.99998)
+scale = Vector2(10.55, 8)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

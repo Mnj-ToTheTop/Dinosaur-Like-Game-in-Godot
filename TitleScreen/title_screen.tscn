@@ -1,0 +1,87 @@
+[gd_scene load_steps=5 format=3 uid="uid://mxnfdng2wqf3"]
+
+[ext_resource type="Script" path="res://TitleScreen/TitleScene.gd" id="1_5bpt1"]
+[ext_resource type="Texture2D" uid="uid://dmx00jj334y5w" path="res://Other/Banner.png" id="1_jghy3"]
+[ext_resource type="Texture2D" uid="uid://bqsuj77wspmdo" path="res://Graphics/Player/jump.png" id="2_lt0fa"]
+[ext_resource type="FontFile" uid="uid://cd16usmcol680" path="res://Other/Big_Bottom_Typeface_Normal.ttf" id="3_ucwoj"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5bpt1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.976471, 0.941176, 0.882353, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -232.5
+offset_top = 46.0
+offset_right = 252.5
+offset_bottom = 293.0
+grow_horizontal = 2
+texture = ExtResource("1_jghy3")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -265.0
+offset_top = 108.0
+offset_right = 815.0
+offset_bottom = 1188.0
+grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_lt0fa")
+
+[node name="HighScore" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -218.0
+offset_right = 91.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.356863, 0.0980392, 0.027451, 1)
+theme_override_fonts/font = ExtResource("3_ucwoj")
+theme_override_font_sizes/font_size = 25
+text = "High Score"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -358.0
+offset_right = 91.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.356863, 0.0980392, 0.027451, 1)
+theme_override_fonts/font = ExtResource("3_ucwoj")
+theme_override_font_sizes/font_size = 25
+text = "Press [ SPACE ] to start"
+horizontal_alignment = 1
+vertical_alignment = 1
